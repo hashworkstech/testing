@@ -1,6 +1,6 @@
 
 
-
+<!-- {% include header.html %} -->
 <div class="bc-desk">
    <!-- upskilling carousel -->
    <h1 class="text-center gotham-rounded-bok heading hw-font-heading"> Bootcamps </h1>
@@ -10,7 +10,7 @@
          <div class="container heading-caro-padd">
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
-               <h2 class="gotham-rounded-light hw-heading h2-color text-center hw-line-height"></h2>
+               <h2 class="gotham-rounded-light hw-heading h2-color text-center hw-line-height"><!-- {{site.data.upskilling-carousel.content}} --></h2>
             </div>
          </div>
       </div>
@@ -93,13 +93,14 @@
          <!-- row -->
          <div class="row">
             <!-- col -->
+            <!-- {% for cont in site.upskilling_cs %} -->
             <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 upskill-cont-filter  all">
                <a href="">
-                  <h2 class="gotham-rounded-bok hw-heading heading text-center bootcamp-hw-heading"></h2>
+                  <h2 class="gotham-rounded-bok hw-heading heading text-center bootcamp-hw-heading"><!-- {{ cont.topic }} --></h2>
                   <!-- hw-upskill-cont -->
                   <div class="hw-upskill-cont">
-                     <h3 class="gotham-rounded-bold text-uppercase hw-tab-heading text-center bootcamp-hw-tab-heading"></h3>
-                     <p class="gotham-rounded-light text-justify bootcamp-hw-tab-para"></p>
+                     <h3 class="gotham-rounded-bold text-uppercase hw-tab-heading text-center bootcamp-hw-tab-heading"><!-- {{ cont.title }} --></h3>
+                     <p class="gotham-rounded-light text-justify bootcamp-hw-tab-para"><!-- {{ cont.desc }} --></p>
                      <!-- row -->
                      <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-8 bootcamp-clearfix">
@@ -122,7 +123,7 @@
                                     </g>
                                  </svg>
                               </li>
-                              <li class="gotham-rounded-light hw-contact-no2"></li>
+                              <li class="gotham-rounded-light hw-contact-no2"><!-- {{ cont.count }} --></li>
                               <li class="bootcamp-devops-img"><img src="/assets/img/bootcamp-devops.png"></li>
                            </ul>
                         </div>
@@ -132,6 +133,7 @@
                   <!-- End of hw-upskill-cont -->
                </a>
             </div>
+            <!-- {% endfor %} -->
             <!-- End of col -->
          </div>
          <!-- End of row -->
@@ -258,4 +260,8 @@
       </div>
    </div>
 </div>
+
+
+<!-- {% include footer.html %}
+{% include html-footer.html %} -->
 
