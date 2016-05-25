@@ -298,7 +298,7 @@ a:hover,
     color: #c9443d;
 }
 .hw-our-thinking-head-contents {
-    margin-top: 14px;
+    margin-top: 20px;
     margin-bottom: 18px;
 }
 .explore-btn {
@@ -2503,15 +2503,10 @@ nav #toc a#toc-actuator {
     transition: .5s ease-in-out;
     cursor: pointer;
 }
-@media screen and (min-width: 768px) and (max-width: 1199px){
+@media screen and (min-width: 767px) and (max-width: 1199px){
     #nav-icon1 {
         top: 8px;
         margin: 2px 28px;
-    }
-}
-@media screen and (max-width: 767px){
-    .hw-home-nav-header #nav-icon1 {
-        top: -6px;
     }
 }
 #nav-icon1 span,
@@ -3711,7 +3706,7 @@ option:checked:before {
         background-position: -63px -91px;
     }
     .news-icon span.menu-icon {
-        background-position: -34px -122px;
+        background-position: -34px -120px;
     }
     .pf-icon:hover span.menu-icon {
         background-position: -5px -5px;
@@ -3732,7 +3727,7 @@ option:checked:before {
         background-position: -63px -63px;
     }
     .news-icon:hover span.menu-icon {
-        background-position: -5px -122px;
+        background-position: -5px -120px;
     }
     .hw-mob-header {
         font-size: 22px;
@@ -4102,7 +4097,7 @@ option:checked:before {
     .company-value {
         color: #ee2b7b;
         font-size: 24px;
-        margin-top: 18px !important;
+        margin-top: 25px !important;
     }
     .hw-company-gen-txt {
         text-align: justify;
@@ -4166,7 +4161,7 @@ option:checked:before {
 }
 @media screen and (max-width: 767px) {
     .col-padding {
-        padding: 7px 10px 7px 10px;
+        padding: 4px 10px 7px 10px;
     }
     .company-value,
     .company-btm .hw-contact-no,
@@ -4192,10 +4187,10 @@ option:checked:before {
         padding-bottom: 0;
     }
     .company-btm {
-        padding-top: 22px;
+        padding-top: 25px;
     }
     .company-para {
-        padding: 14px 0;
+        padding: 18px 0;
     }
     .company-det {
         padding-bottom: 0;
@@ -4456,10 +4451,6 @@ option:checked:before {
     nav#toc ul li,
     nav #toc ul li {
         width: 64%;
-    }
-    nav#toc ul li.srch-content-menu,nav #toc ul .srch-content-menu{
-        width: 80%;
-        padding-left: 15px;
     }
 }
 /* End : header.css */
@@ -4731,7 +4722,7 @@ option:checked:before {
         padding-right: 9px;
     }
     .carousel-padding {
-        padding: 0 15px 5px !important;
+        padding: 0 10px 15px !important;
     }
     .hw-font-heading1 {
         font-family: "gotham-rounded-light";
@@ -4741,14 +4732,10 @@ option:checked:before {
     .blog-margin {
         margin-top: 0;
     }
-    .blog-margin .clearfix{
-        padding: 2px 0 10px;
-    }
     .blog-grid li h3 {
         color: #ee2b7b;
         font-size: 12px;
-        margin-top: 12px;
-        margin-bottom: 13px;
+        margin-top: 15px;
         padding-bottom: 0px;
         text-align: center;
     }
@@ -4790,7 +4777,7 @@ option:checked:before {
         border-radius: 35px;
         margin: 0 auto;
         padding: 0;
-        width: 220px;
+        width: 210px;
         text-align: center;
         float: none;
     }
@@ -4840,10 +4827,6 @@ option:checked:before {
     }
     .blog-content:nth-child(2n+1) {
         padding-right: 15px;
-    }
-    .blog-para-first{
-        margin-left: 0 !important;
-        margin-right: 0 !important;
     }
 }
 /* Start : Blog.css */
@@ -5657,15 +5640,6 @@ option:checked:before {
     padding: 0;
     width: 600px;
 }
-#jb-mob .collobo-footer-division {
-    padding: 8px 0;
-    display: table;
-}
-#jb-mob .collobo-hw-main-heading{
-    font-size: 10px;
-    padding: 10px 0;
-    text-align: center;
-}
 .clearfix {
     padding: 12px 0 10px;
 }
@@ -6315,7 +6289,7 @@ option:checked:before {
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
     #google-search-div i.fa.fa-angle-right.search-arrow {
-        margin-left: 105px;
+        margin-left: 75px;
     }
     .subtitle.gotham-rounded-light {
         color: #ee2b7b;
@@ -7096,7 +7070,7 @@ h2 {
         padding: 0 15px;
         border: none;
         font-size: 14px;
-        color: #000 !important;
+        color: #000;
         font-family: "gotham-rounded-light";
     }
     .ms-options-wrap > .ms-options > ul li.selected label,
@@ -7586,7 +7560,7 @@ h2 {
     #jb-mob .pannel-job ul li {
         list-style: none;
     }
-    .pannel-job ul li.jb-skill1:before {
+    #jb-mob .pannel-job ul li:before {
         content: '\2022';
         display: block;
         position: relative;
@@ -7769,7 +7743,6 @@ input[type="radio"] {
     left: 12% !important;
     width: 75% !important;
     min-height: auto !important;
-    max-height: 200px !important;
     z-index: 9;
 }
 .ms-options-wrap > button:focus,
@@ -7843,9 +7816,7 @@ input[type="radio"] {
         left: 10% !important;
     }
 }
-.blog-grid .intro-wrapper{
-    overflow: visible;
-}
+
 @media screen and (min-width: 1200px){
     .blog-grid .intro-wrapper {
         padding: 0 50px 50px;
@@ -7856,17 +7827,10 @@ input[type="radio"] {
         padding: 0;
     }
 }
-@media screen and (max-width: 767px){
-    .hw-works-row .nav-scroll-up {
-        display: none !important;
-    }
-    .blog-grid a.button{
-        padding: 14px 20%;
-    }
-}
 @media screen and (max-width: 640px){
     .blog-grid .intro-wrapper{
-        padding: 0;
+        padding: 0 0 24px;
+        overflow: visible;
     }
     .tagline.gotham-rounded-bold.margin-zero.hw-font-heading1 {
         margin-left: 0;
@@ -7877,7 +7841,7 @@ input[type="radio"] {
         padding-right: 0;
     }
     .row.filters.cs-li-margin{
-        margin: 20px 25px 0;
+        margin: 24px 35px 0;
     }
     .ms-options-wrap {
         padding-left: 5px;
