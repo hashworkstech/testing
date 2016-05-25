@@ -1,6 +1,5 @@
 
 
-
 <div class="bc-desk">
    <!-- upskilling carousel -->
    <h1 class="text-center gotham-rounded-bok heading hw-font-heading"> Bootcamps </h1>
@@ -94,8 +93,8 @@
          <div class="row">
             <!-- col -->
             <!-- {% for cont in site.upskilling_cs %} -->
-            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 upskill-cont-filter  all">
-               <a href="">
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 upskill-cont-filter  all {{ cont.topic | downcase }}">
+               <a href="{{cont.url}}">
                   <h2 class="gotham-rounded-bok hw-heading heading text-center bootcamp-hw-heading"><!-- {{ cont.topic }} --></h2>
                   <!-- hw-upskill-cont -->
                   <div class="hw-upskill-cont">
