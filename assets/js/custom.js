@@ -2186,7 +2186,7 @@ var h1=Math.floor($(".zoomin1 img").width()/ $('.zoomin1 img').parent().width() 
   
 }
   else{
-    $(".zoomin1 img").css("width",h1);
+    $(".zoomin1 img").css("width","100%");
     // $(".tab-img-div").css("overflow","hidden");
   }
  
@@ -2204,7 +2204,7 @@ $('.eng-zoom-out1').click(function () {
  
 }
   else{
-    $(".zoomin img").css("width",h);
+    $(".js-tab-img").css("width","100%");
     // $(".tab-img-div").css("overflow","hidden");
   }
    });
